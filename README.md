@@ -77,6 +77,14 @@ Siga las intrucciones que vienen a continuación para poder probar el proyecto l
    ```js
    node index.js o utilizar nodemon
    ```
+4. Crear variable de entorno llamada variables.env y poner lo siguiente:
+
+   ```js
+   FRONTEND_URL= http://localhost:3000
+   DB_URL= mongodb+srv://root:root@cluster0.qvtyi.mongodb.net/starwars
+
+
+   ```
 
 ### Consideraciones
 
