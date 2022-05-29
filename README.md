@@ -88,12 +88,29 @@ La base de datos esta en Mongo DB Atlas, por lo que no es necesario instalar nad
 
 Esta es una API de consumo. Solo se utilizó el método HTTP GET.
 
-1. [api/interstellar-ships](https://bsale-test-store.herokuapp.com/api/products) Permite crear una nueva nave retornado la respuesta correspondiente
+1. [api/interstellar-ships](https://bsale-test-store.herokuapp.com/api/products) Permite ver todas las naves de la base de datos
 
 ```json
-{
-  "msg": "ship created successfully "
-}
+[
+  {
+    "name": "StarFighter",
+    "model": "X-wag",
+    "manufacter": "John Doe",
+    "passangers": 2,
+    "starShipClass": "Fighter",
+    "cargoCapacity": 400,
+    "__v": 0
+  },
+  {
+    "name": "StarFighter",
+    "model": "X-wag",
+    "manufacter": "John Doe",
+    "passangers": 2,
+    "starShipClass": "Fighter",
+    "cargoCapacity": 400,
+    "__v": 0
+  }
+]
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
