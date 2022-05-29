@@ -96,7 +96,7 @@ La base de datos esta en Mongo DB Atlas, por lo que no es necesario instalar nad
 
 Esta es una API de consumo. Solo se utilizó el método HTTP GET.
 
-1. [api/interstellar-ships](https://bsale-test-store.herokuapp.com/api/products) Permite ver todas las naves de la base de datos
+1. [api/interstellar-ships]() Permite ver todas las naves de la base de datos
 
 ```json
 [
@@ -120,5 +120,7 @@ Esta es una API de consumo. Solo se utilizó el método HTTP GET.
   }
 ]
 ```
+
+2. [/api-doc]() Permite ver la documentación de la API creada en swagger
 
 <p align="right">(<a href="#top">back to top</a>)</p>

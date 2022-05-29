@@ -31,22 +31,14 @@ app.use(
   swaggerUI.setup(swaggerJsDoc(swaggerSpec))
 );
 app.use(express.json());
+
 // Config of CORS
-// const whitelist = [process.env.FRONTEND_URL];
 
-// const corsOptions = {
-//   origin: function (origin, callback) {
-//     if (whitelist.includes(origin)) {
-//       // can access to API
-//       callback(null, true);
-//     } else {
-//       // forbidden
-//       callback(new Error("Error de Cors"));
-//     }
-//   },
-// };
+const corsOptions = {
+  origin: process.env.FRONTEND_URL,
+};
 
-// app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 
 //app routes
 app.use("/api/interstellar-ships", require("./routes/ship"));
